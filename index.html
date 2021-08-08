@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<style>
+    #header-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #left-header-container {
+        margin-top: 20px;
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #right-header-container {
+        margin-top: 20px;
+        margin-right: 20px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .header-links a {
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 13px;
+        font-family: arial, sans-serif;
+        color: black;
+    }
+
+    .header-links a:hover {
+        text-decoration: underline;
+    }
+
+    #logo-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 165px;
+    }
+
+    #search-bar-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    #buttons-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    #feeling-lucky-btn {
+        margin-left: 15px;
+    }
+
+    #search-text {
+        line-height: 2em;
+        border-radius: 15px;
+        width: 500px;
+    }
+
+    #sign-in {
+        margin-bottom: 10px;
+        margin-left: 20px;
+        padding: 5px 15px;
+        text-align: center;
+        text-decoration: none;
+        border: 1px solid #4285f4;
+        border-radius: 2px;
+        color: white;
+        background-color: #4285f4;
+        cursor: default;
+    }
+</style>
+<html>
+    <head>
+        <title>Google</title>
+    </head>
+    <body>
+        <div id="header-container">
+        <div id="left-header-container" class="header-links">
+            <a href="#">About</a>
+            <a href="#">Store</a>
+        </div>
+        <div id="right-header-container" class="header-links">
+            <a href="#">Gmail</a>
+            <a href="#">Images</a>
+            <button id="sign-in"><strong>Sign in</strong></button>
+        </div>
+        </div>
+        <div id="logo-container">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+        </div>
+        <div id="search-bar-container">
+            <form>
+                <input type="text" id="search-text">
+            </form>
+        </div>
+        <div id="buttons-container">
+            <button id="google-search-btn">Google Search</button>
+            <button id="feeling-lucky-btn">I'm Feeling Lucky</button>
+        </div>
+    </body>
+</html>
